@@ -37,7 +37,7 @@
                         <li class="header__nav-item"><a href=""><i class="fas fa-envelope"></i>khiemld28@gmail.com</a></li>
                     </ul>
                     <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href=""><i class="fas fa-bell fas--font"></i>Tin Tức</a>
+                        <li class="header__nav-item"><a href=""><i class="far fa-bell fas--font"></i>Tin Tức</a>
                             <div class="header__notify">
                                 <div class="header__notify-header">
                                     <h3>Tin Tức Mới Nhất</h3>
@@ -140,20 +140,34 @@
                             </div>
                         
                         </li>
-                        <li class="header__nav-item"><a href=""><i class="fas fa-question-circle fas--font"></i>Liên Hệ</a></li>
-                        <li class="header__nav-item header__nav-item--separate"><a href="">Đăng Ký</a></li>
-                        <li class="header__nav-item"><a href="">Đăng Nhập</a></li>
+                        <li class="header__nav-item"><a href=""><i class="far fa-question-circle fas--font"></i>Liên Hệ</a></li>
+                        <li class="header__nav-item header__nav-item--separate header__nav-item--logged"><a href="">Đăng Ký</a></li>
+                        <li class="header__nav-item header__nav-item--logged"><a href="">Đăng Nhập</a></li>
+                        
                     </ul>
                 </div>
             </div>
             <div class="grid__full-width grid__full_bgr">
                 <div class="header_content grid">
                     <div class="header__logo">
-                        <img src="./assets/img/83-1574737287-myphamohui-lgvina.png" alt="">
+                        <a href="/"><img src="./assets/img/83-1574737287-myphamohui-lgvina.png" alt=""></a>
                     </div>
                     <div class="header__search">
                         <div class="header__search-search">
                             <input type="text" class="header__search--input" placeholder="Tìm Kiêm">
+                            <div class="header__search-history">
+                                <div class="header__search-history--header">
+                                    Lịch sử tìm kiêm
+                                </div>
+                                <ul class="header__search-history--content">
+                                    <li class="header__search-history--item">
+                                        Xe O To
+                                    </li>
+                                    <li class="header__search-history--item">
+                                        Sieu Nhan
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="header__search-switch">
                             <span class="header__search--switch-shop">Cửa Hàng<i class="fas fa-chevron-down"></i></span>
@@ -171,18 +185,925 @@
                         </div>
                     </div>
                     <div class="header__cart">
-                        <!-- <i class="fal fa-shopping-cart"></i> -->
-                        <!-- <i class="header__cart--cart far fa-shopping-cart"></i> -->
                         <i class="header__cart--cart fas fa-shopping-cart"></i>
+                        <span class="header__cart--number-product">9</span>
+                        <!-- No Product -->
+                        <div class="header__cart-product">
+                            <div class="header__cart-no-product">
+                                <img src="./assets/img/cart.png" alt="" class="header__cart-none-product">
+                                <p class="header__cart-text-none-product">Chưa có sản phẩm</p>
+                            </div>
+                        </div>
+                        <div class="header__cart-product">
+                            <div class="header__cart-had-product--header">
+                                Sản phẩm đã thêm
+                            </div>
+                            <div class="header__cart-had-product--content">
+                                <ul class="header__cart-had-product-list">
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Son Whoo Luxury Lip Rouge mia - Dưỡng ẩm môi
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            350.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Set kem chống nắng Whoo Seol - Chống nắng - môi đẹp
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            1.121.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Set tái sinh Su:M37 Losec Su
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            850.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Son Whoo Luxury Lip Rouge mi
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            350.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Set kem chống nắng Whoo Seol
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            1.121.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Set tái sinh Su:M37 Losec Su
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            850.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Son Whoo Luxury Lip Rouge mi
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            350.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Set kem chống nắng Whoo Seol
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            1.121.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                    <li class="header__cart-had-product-item">
+                                        <div class="header__cart-had-product-infor">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="" class="header__cart-had-product-img">
+                                            <div class="header__cart-had-product-all-content">
+                                                <div class="header__cart-had-product-detail">
+                                                    <span class="header__cart-had-product-name">
+                                                        Set tái sinh Su:M37 Losec Su
+                                                    </span>
+                                                    <div class="header__cart-had-product-detail-infor">
+                                                        <span class="header__cart-had-product-price">
+                                                            850.000đ
+                                                        </span>
+                                                        <span class="header__cart-had-product-mutiply">
+                                                            x
+                                                        </span>
+                                                        <span class="header__cart-had-product-number">
+                                                            1
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-had-product-action">
+                                                    <button class="header__cart-had-product-rmv">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__cart-had-product--footer">
+                                <div class="header__cart-had-product--footer-cart">
+                                    <span class="header__cart-had-product--footer-text">
+                                        Tổng tiền
+                                    </span>
+                                    <span class="header__cart-had-product--footer-price">
+                                        2.325.000đ
+                                    </span>
+                                </div>
+                                <div class="header__cart-had-product--footer-cart">
+                                    <span class="header__cart-had-product--footer-text">
+                                        Ví tích điểm
+                                    </span>
+                                    <span class="header__cart-had-product--footer-price">
+                                        +2.325 điểm
+                                    </span>
+                                </div>
+                                <div class="header__cart-had-product--footer-btn">
+                                    <button class="btn btn-had-product-footer">Xem giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="container">
+            <div class="grid ">
+                <div class="grid__row container__padding">
+                    <div class="grid__col-2">
+                        <nav class="category">
+                            <h3 class="category-header">
+                                <span class="category-header--text">Danh Mục</span>
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--link-active">
+                                    <a href="" class="category-item--link">Tất Cả Sản Phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item--link">Son Balacia</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item--link">Son Đỏ Đươi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item--link">Whooo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item--link">Ohui Dưỡng Trắng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item--link">Dưỡng Môi</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__col-10">
+                        <div class="sort__filter">
+                            <div class="sort__filter-search">
+                                <span class="sort__filter-text">Sắp Xếp Theo</span>
+                                <button class="btn sort__filter-btn sort__filter-btn-active">Phổ Biến</button>
+                                <button class="btn sort__filter-btn">Mới Nhất</button>
+                                <button class="btn sort__filter-btn">Bán Chạy</button>
+                                <div class="sort__filter--price select-input">
+                                    <span>Giá</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                    <ul class="sort__filter-select-input">
+                                        <li class="sort__filter-select-input-item">
+                                            <a href="" class="sort__filter-select-input-link">Giá : Thấp đến Cao</a>
+                                        </li>
+                                        <li class="sort__filter-select-input-item">
+                                            <a href="" class="sort__filter-select-input-link">Giá : Cao đến Thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
+                            </div>
+                            <div class="sort__filter--page">
+                                <span class="sort__filter--page-num">
+                                    1
+                                    <span class="sort__filter--page-sum">
+                                        /14
+                                    </span>
+                                </span>
+                                <div class="sort__filter--page-btn">
+                                    <button class="sort__filter--page-btn-index btn btn-disable"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="sort__filter--page-btn-index btn"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-container">
+                            <div class="grid__row">
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1610780786-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1596624550-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1596528994-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1596535100-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1591788607-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1591783524-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1591778831-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="grid__col-2-4">
+                                    <div class="product-item">
+                                        <div class="product-item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1591697126-myphamohui-lgvina.png);"></div>
+                                        <div class="product-item-infor">
+                                            <h4 class="product-item-header">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                            <div class="product-item-price">
+                                                <span class="product-old-price">2.100.000đ</span>
+                                                <span class="product-new-price">1.890.000đ</span>
+                                            </div>
+                                            <div class="product-item-rating">
+                                                <div class="product-item-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item-rate-star">
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="product-item-rate-star-yellow fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-item-rate-sell">
+                                                    <span>68 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product-item-company">Whoo</span>
+                                                <span class="product-item-country">Hàn Quốc</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-like-love">
+                                            <span><i class="fas fa-check"></i>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item-discount">
+                                            <span class="product-item-discount-number">10%</span>
+                                            <span class="product-item-discount-label">Giảm</span>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination product-container--pagination">
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link pagination__item-link-active">
+                                    1
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    2
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    3
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    4
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    5
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    14
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer">
+        <div class="footer footer--common">
+            <div class="grid">
+                <div class="grid__row ">
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__header">Chăm Sóc Khách Hàng</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">Trung Tâm Trợ Giúp</li>
+                            <li class="footer-item">Hướng Dẫn Mua Hàng</li>
+                            <li class="footer-item">Chính Sách Vận Chuyển</li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__header">Về Chúng Tôi</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item">Giới Thiệu Về Mỹ Phẩm Ohui - LG Vina</li>
+                            <li class="footer-item">Tuyển Dụng</li>
+                            <li class="footer-item">Điều Khoản Chính Sách</li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__header"></h5>
+                        
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__header">Theo Dõi Chung Tôi Trên</h5>
+                        <ul class="footer-list">
+                            <li class="footer-item"><i class="fab fa-facebook"></i>Facebook</li>
+                            <li class="footer-item"><i class="fab fa-instagram-square"></i>Instagram</li>
+                            <li class="footer-item"><i class="fab fa-youtube"></i>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__header">Vào Cửa Hàng Trên Ứng Dụng</h5>
+                        <div class="footer__app">
+                            
+                                <div class="footer__qr">
+                                    <img src="https://img.tickid.vn/photos/qrcode_base64/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ" alt="" class="footer__qr-img">
+                                </div>
+                                <div class="footer__app--app">
+                                    <a href="" class="footer__app-link">
 
+                                        <img src="./assets/img/apple.png" alt="" class="footer__qr-app">
+                                    </a>
+                                    <a href="" class="footer__app-link">
+
+                                        <img src="./assets/img/googleplay.png" alt="" class="footer__qr-gg">
+                                    </a>
+    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="grid">
+                        <div class="footer__contact-policy">
+                            <a href="" class="footer__contact-policy-link">
+                                Chính sách bảo mật
+                            </a>
+                            <a href="" class="footer__contact-policy-link">
+                                Quy chế hoạt động
+                            </a>
+                            <a href="" class="footer__contact-policy-link">
+                                Chính sách trả hàng và hoàn tiền
+                            </a>
+                        </div>
+                        
+                    
+                    <div class="footer__contact-infor">
+                        
+                        <p>Công ty mỹ phẩm Ohui- LGvina</p>
+                        <p>Chi nhánh: 63 Lê Văn Lương, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                    </div>
+                   
+                </div>
+            </div>
         </div>
     </div>
     <div class="modal">
@@ -198,6 +1119,7 @@
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng Ký</h3>
                             <span class="auth-form__switch-btn">Đăng nhập</span>
+
                         </div>
                         <div class="auth-form__form">
                             <div class="auth-form__form--group">

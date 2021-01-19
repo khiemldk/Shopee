@@ -14,6 +14,12 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.btn-disable {
+    cursor: default !important;
+    background-color: #f9f9f9 !important;
+    opacity: 1 !important;
+    color: #ccc;
+}
 .btn {
     border-radius: 2px;
     cursor: pointer;
@@ -21,6 +27,7 @@ html {
     font-size: 1.4rem;
     border: none;
     background-color: var(--white-color);
+    /* display: inline-block; */
 }
 .btn:hover{
     opacity: 0.8;
@@ -36,6 +43,25 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.grid__col-2 {
+    width: 16.66666%;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.grid__col-2-4 {
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.grid__col-10 {
+    width: 83.33334%;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 @keyframes animati{
     from {
@@ -84,4 +110,16 @@ html {
     margin: auto;
     border-radius: 5px;
 
+}
+
+/* Selection */
+.select-input {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    min-width: 216px;
+    border-radius: 2px;
+    cursor: default;
+    padding : 8px 15px;
 }
